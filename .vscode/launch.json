@@ -1,0 +1,38 @@
+// A launch configuration that compiles the extension and then opens it inside a new window
+// Use IntelliSense to learn about possible attributes.
+// Hover to view descriptions of existing attributes.
+// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+{
+  "version": "0.2.0",
+  "inputs": [
+    {
+      "id": "browser",
+      "description": "Select Browser",
+      "type": "pickString",
+      "options": [
+        "chrome",
+        "firefox",
+        "edge",
+        "safari"
+      ],
+      "default": "chrome"
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Debug Current Test",
+      "request": "launch",
+      "runtimeArgs": [
+        "run",
+        "${file}",
+        "--browser",
+        "${input:browser}"
+      ],
+      "runtimeExecutable": "katalon",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+    }
+  ]
+}

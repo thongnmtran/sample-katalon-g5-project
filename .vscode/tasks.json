@@ -1,0 +1,40 @@
+{
+	"version": "2.0.0",
+	"inputs": [
+		{
+			"id": "browser",
+			"description": "Select Browser",
+			"type": "pickString",
+			"options": [
+				"chrome",
+				"firefox",
+				"edge",
+				"safari"
+			],
+			"default": "chrome"
+		}
+	],
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run Current Test",
+			"command": "katalon run \"${file}\" --browser ${input:browser}",
+			"problemMatcher": [],
+			"icon": {
+				"color": "terminal.ansiMagenta",
+				"id": "link-external"
+			},
+			"group": "test",
+			"presentation": {
+				"echo": false,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": false,
+				"close": false,
+				"group": "test"
+			}
+		}
+	]
+}

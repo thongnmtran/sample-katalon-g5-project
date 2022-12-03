@@ -1,0 +1,15 @@
+{
+  "name": "sample-katalon-g5-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm link @katalon-g5/engine-sideload",
+    "start": "katalon run ./tests/openBrowser.test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^3.12.1"
+  }
+}
