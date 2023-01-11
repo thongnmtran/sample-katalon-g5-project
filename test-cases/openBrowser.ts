@@ -1,4 +1,4 @@
-import katalon from "@katalon-g5/engine-sideload";
+import katalon from "@katalon-studio/test";
 
 export default katalon.testCase(
   "should open Chrome browser",

@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm link @katalon-g5/engine-sideload",
-    "start": "katalon run ./tests/openBrowser.test.ts"
+    "start": "katalon run ./test-cases/openBrowser.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tsx": "^3.12.1"
+  },
+  "dependencies": {
+    "@katalon-studio/test": "^1.0.0"
   }
 }

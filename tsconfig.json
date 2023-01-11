@@ -10,5 +10,6 @@
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "incremental": true,
+    "noEmit": true
   }
 }
